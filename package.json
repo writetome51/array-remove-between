@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-remove-between",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Function removes chunk of adjacent items from the middle of the array",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,9 @@
   "author": "Steve Thompson",
   "license": "MIT",
   "devDependencies": {
-    "@writetome51/arrays-match": "latest"
+    "@writetome51/arrays-match": "~1.0.3"
   },
   "dependencies": {
-    "@writetome51/array-get-and-remove-between": "latest"
+    "@writetome51/array-get-and-remove-between": "~1.0.3"
   }
 }

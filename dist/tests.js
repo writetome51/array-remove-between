@@ -1,38 +1,38 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var removeBetween_1 = require("./removeBetween");
+var index_1 = require("./index");
 var arrays_match_1 = require("@writetome51/arrays-match");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // Test 1:
-removeBetween_1.removeBetween(1, arr);
+index_1.removeBetween(1, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 10]))
     console.log('test 1 passed');
 else
     console.log('test 1 failed');
 // Test 2: make sure those items were removed from array:
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-removeBetween_1.removeBetween(2, arr);
+index_1.removeBetween(2, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 9, 10]))
     console.log('test 2 passed');
 else
     console.log('test 2 failed');
 // Test 3
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-removeBetween_1.removeBetween(4, arr);
+index_1.removeBetween(4, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 3, 4, 7, 8, 9, 10]))
     console.log('test 3 passed');
 else
     console.log('test 3 failed');
 // Test 4:
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
-removeBetween_1.removeBetween(6, arr);
+index_1.removeBetween(6, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16]))
     console.log('test 4 passed');
 else
     console.log('test 4 failed');
 // Test 5:
 arr = [1, 2, 3, 4, 5, 6, 7, 8, [1, 2, 3], 10, 11, 12, 13, 14, 15, 16, 17];
-removeBetween_1.removeBetween(8, arr);
+index_1.removeBetween(8, arr);
 if (arrays_match_1.arraysMatch(arr, [1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17]))
     console.log('test 5 passed');
 else
@@ -42,7 +42,7 @@ else
 var errorTriggered = false;
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 try {
-    removeBetween_1.removeBetween(8, arr);
+    index_1.removeBetween(8, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -56,7 +56,7 @@ else
 errorTriggered = false;
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 try {
-    removeBetween_1.removeBetween(9, arr);
+    index_1.removeBetween(9, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -69,7 +69,7 @@ else
 errorTriggered = false;
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 try {
-    removeBetween_1.removeBetween(0, arr);
+    index_1.removeBetween(0, arr);
 }
 catch (e) {
     errorTriggered = true;
@@ -82,7 +82,7 @@ else
 errorTriggered = false;
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
 try {
-    removeBetween_1.removeBetween(-1, arr);
+    index_1.removeBetween(-1, arr);
 }
 catch (e) {
     errorTriggered = true;
